@@ -13,6 +13,8 @@ import Review from './Van/Review'
 import Fetch from './components/Fetch'
 import Apibackend from './components/Apibackend'
 import Signup from './components/Signup'
+import Register from './components/Auth/Register'
+import Fileupload from './styles/Fileupload'
 
 function App() {
   return (
@@ -23,11 +25,13 @@ function App() {
        <Route path="/navbar" element={<Navbar />} />
        <Route path="/contact" element={<Contact />} />
        <Route path="/price" element={<Price />} />
-       {/* <Route path="/fetch" element={<Fetch/>} /> */}
+       <Route path="/fetch" element={<Fetch/>} />
        <Route path="/home" element={<Home />} />
        <Route path="/service" element={<Service />} />
        <Route path="/api" element={<Apibackend/>}/>
        <Route path="/signup" element={<Signup />} />
+       <Route path="/file" element={<Fileupload/>}/>
+       <Route path="/register" element={<Register/>}/>
        <Route path="/van" />
 
        {/* <Route path="/van" element={<Dashboard/>}/>
