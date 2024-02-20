@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect } from 'react'
 
 const Fileupload = () => {
-    let URL = "http://localhost:3000/upload "
+    let URL = "http://localhost:3000/upload"
     const fileChanger = (e) => {
         console.log(e.target.files[0]);
         let myImage = e.target.files[0];
@@ -15,7 +15,7 @@ const Fileupload = () => {
     };
  
    const upload = ()=>{
-    axios.post(URL, {myfile})
+    axios.post(URL,{myfile})
    }
   return (
     <div>
